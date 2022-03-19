@@ -5,11 +5,11 @@ import ShopProductCard from './ProductCard';
 
 // ----------------------------------------------------------------------
 
-ProductList.propTypes = {
+TaskList.propTypes = {
   products: PropTypes.array.isRequired
 };
 
-export default function ProductList({ products, ...other }) {
+export default function TaskList({ products, ...other }) {
   return (
     <Grid container spacing={3} {...other}>
       {products.map((product) => (

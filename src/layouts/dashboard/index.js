@@ -23,6 +23,7 @@ const MainStyle = styled('div')(({ theme }) => ({
   minHeight: '100%',
   paddingTop: APP_BAR_MOBILE + 24,
   paddingBottom: theme.spacing(10),
+  backgroundColor: theme.palette.grey[0],
   [theme.breakpoints.up('lg')]: {
     paddingTop: APP_BAR_DESKTOP + 24,
     paddingLeft: theme.spacing(2),

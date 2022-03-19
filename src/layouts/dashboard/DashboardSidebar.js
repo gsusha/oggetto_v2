@@ -4,8 +4,6 @@ import { Link as RouterLink, useLocation } from 'react-router-dom';
 // material
 import { styled } from '@mui/material/styles';
 import { Box, Link, Button, Drawer, Typography, Avatar, Stack } from '@mui/material';
-// mocks_
-import account from '../../_mocks_/account';
 // hooks
 import useResponsive from '../../hooks/useResponsive';
 // components
@@ -31,7 +29,7 @@ const AccountStyle = styled('div')(({ theme }) => ({
   alignItems: 'center',
   padding: theme.spacing(2, 2.5),
   borderRadius: Number(theme.shape.borderRadius) * 1.5,
-  backgroundColor: theme.palette.grey[500_12]
+  backgroundColor: theme.palette.grey[0]
 }));
 
 // ----------------------------------------------------------------------
@@ -91,7 +89,8 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
           PaperProps={{
             sx: {
               width: DRAWER_WIDTH,
-              bgcolor: 'background.default',
+              bgcolor: '#fff',
+              padding: '20px',
               borderRightStyle: 'dashed'
             }
           }}

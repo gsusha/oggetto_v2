@@ -7,19 +7,19 @@ const getIcon = (name) => <Iconify icon={name} width={22} height={22} />;
 
 const sidebarConfig = [
   {
-    title: 'dashboard',
+    title: 'Тесты',
     path: '/dashboard/app',
-    icon: getIcon('eva:pie-chart-2-fill')
+    icon: getIcon('bi:list-check')
   },
   {
-    title: 'user',
+    title: 'Задания',
+    path: '/dashboard/tasks',
+    icon: getIcon('gg:edit-black-point')
+  },
+  {
+    title: 'Кандидаты',
     path: '/dashboard/user',
-    icon: getIcon('eva:people-fill')
-  },
-  {
-    title: 'product',
-    path: '/dashboard/products',
-    icon: getIcon('eva:shopping-bag-fill')
+    icon: getIcon('fluent:people-16-regular')
   }
 ];
 

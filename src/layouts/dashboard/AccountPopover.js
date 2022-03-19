@@ -9,28 +9,6 @@ import MenuPopover from '../../components/MenuPopover';
 //
 import account from '../../_mocks_/account';
 
-// ----------------------------------------------------------------------
-
-const MENU_OPTIONS = [
-  {
-    label: 'Home',
-    icon: 'eva:home-fill',
-    linkTo: '/'
-  },
-  {
-    label: 'Profile',
-    icon: 'eva:person-fill',
-    linkTo: '#'
-  },
-  {
-    label: 'Settings',
-    icon: 'eva:settings-2-fill',
-    linkTo: '#'
-  }
-];
-
-// ----------------------------------------------------------------------
-
 export default function AccountPopover() {
   const anchorRef = useRef(null);
   const [open, setOpen] = useState(false);
@@ -82,32 +60,9 @@ export default function AccountPopover() {
           </Typography>
         </Box>
 
-        <Divider sx={{ my: 1 }} />
-
-        {MENU_OPTIONS.map((option) => (
-          <MenuItem
-            key={option.label}
-            to={option.linkTo}
-            component={RouterLink}
-            onClick={handleClose}
-            sx={{ typography: 'body2', py: 1, px: 2.5 }}
-          >
-            <Iconify
-              icon={option.icon}
-              sx={{
-                mr: 2,
-                width: 24,
-                height: 24
-              }}
-            />
-
-            {option.label}
-          </MenuItem>
-        ))}
-
         <Box sx={{ p: 2, pt: 1.5 }}>
           <Button fullWidth color="inherit" variant="outlined">
-            Logout
+            Выход
           </Button>
         </Box>
       </MenuPopover>

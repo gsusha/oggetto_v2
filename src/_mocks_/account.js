@@ -1,8 +1,8 @@
 // ----------------------------------------------------------------------
 
 const account = {
-  displayName: 'Jaydon Frankie',
-  email: 'demo@minimals.cc',
+  displayName: 'Анна Белюченко',
+  email: 'test@oggetto.ru',
   photoURL: '/static/mock-images/avatars/avatar_default.jpg'
 };
 

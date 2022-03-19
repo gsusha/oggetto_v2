@@ -23,7 +23,7 @@ const SearchbarStyle = styled('div')(({ theme }) => ({
   WebkitBackdropFilter: 'blur(6px)', // Fix on Mobile
   padding: theme.spacing(0, 3),
   boxShadow: theme.customShadows.z8,
-  backgroundColor: `${alpha(theme.palette.background.default, 0.72)}`,
+  backgroundColor: theme.palette.grey[0],
   [theme.breakpoints.up('md')]: {
     height: APPBAR_DESKTOP,
     padding: theme.spacing(0, 5)

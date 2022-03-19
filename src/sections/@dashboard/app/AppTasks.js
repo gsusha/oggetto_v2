@@ -70,7 +70,7 @@ export default function AppTasks() {
 
   return (
     <Card>
-      <CardHeader title="Tasks" />
+      <CardHeader title="Tests" />
       <Box sx={{ px: 3, py: 1 }}>
         <FormikProvider value={formik}>
           <Form autoComplete="off" noValidate onSubmit={handleSubmit}>
