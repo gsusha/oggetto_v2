@@ -1,20 +1,20 @@
 import PropTypes from 'prop-types';
 // material
 import { Grid } from '@mui/material';
-import ShopProductCard from './ProductCard';
+import TaskCard from './TaskCard';
 
 // ----------------------------------------------------------------------
 
 TaskList.propTypes = {
-  products: PropTypes.array.isRequired
+  tasks: PropTypes.array.isRequired
 };
 
-export default function TaskList({ products, ...other }) {
+export default function TaskList({ tasks, ...other }) {
   return (
     <Grid container spacing={3} {...other}>
-      {products.map((product) => (
-        <Grid key={product.id} item xs={12} sm={6} md={3}>
-          <ShopProductCard product={product} />
+      {tasks.map((task) => (
+        <Grid key={task.id} item xs={12} sm={6} md={3}>
+          <TaskCard task={task} />
         </Grid>
       ))}
     </Grid>

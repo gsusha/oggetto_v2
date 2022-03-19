@@ -2,8 +2,8 @@
 import { Box, Grid, Container, Typography } from '@mui/material';
 // components
 import Page from '../components/Page';
-import PRODUCTS from '../_mocks_/products';
 import { ProductList } from '../sections/@dashboard/products';
+import tasks from '../_mocks_/tasks';
 
 // ----------------------------------------------------------------------
 
@@ -40,7 +40,7 @@ export default function Tests() {
           <Typography variant="h4">Senior</Typography>
         </Box>
 
-        <ProductList products={PRODUCTS} />
+        <ProductList tasks={tasks} />
       </Container>
     </Page>
   );
