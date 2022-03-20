@@ -10,6 +10,7 @@ import User from './pages/User';
 import NotFound from './pages/Page404';
 import TestCreate from './pages/tests/TestCreate';
 import TaskCreate from './pages/tasks/TaskCreate';
+import TestSuccess from './pages/tests/TestSucces';
 
 // ----------------------------------------------------------------------
 
@@ -23,7 +24,9 @@ export default function Router() {
         { path: 'user', element: <User /> },
         { path: 'tasks', element: <Tasks /> },
         { path: 'test/new', element: <TestCreate /> },
-        { path: 'tasks/new', element: <TaskCreate /> }
+        { path: 'tasks/new', element: <TaskCreate /> },
+        { path: 'tasks/new', element: <TaskCreate /> },
+        { path: 'test/new/success', element: <TestSuccess /> }
       ]
     },
     {

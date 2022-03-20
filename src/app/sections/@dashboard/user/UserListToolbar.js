@@ -47,7 +47,7 @@ export default function UserListToolbar({ filterName, onFilterName }) {
       <SearchStyle
         value={filterName}
         onChange={onFilterName}
-        placeholder="Search user..."
+        placeholder="Найти кандидата..."
         startAdornment={
           <InputAdornment position="start">
             <Iconify icon="eva:search-fill" sx={{ color: 'text.disabled' }} />
