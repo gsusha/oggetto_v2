@@ -8,6 +8,8 @@ import Tests from './pages/Tests';
 import Tasks from './pages/Tasks';
 import User from './pages/User';
 import NotFound from './pages/Page404';
+import TaskDetail from './pages/TaskDetail';
+import TestDetail from './pages/TestDetail';
 
 // ----------------------------------------------------------------------
 
@@ -19,7 +21,9 @@ export default function Router() {
       children: [
         { path: 'app', element: <Tests /> },
         { path: 'user', element: <User /> },
-        { path: 'tasks', element: <Tasks /> }
+        { path: 'tasks', element: <Tasks /> },
+        { path: 'tests/new', element: <TestDetail /> },
+        { path: 'tasks/new', element: <TaskDetail /> }
       ]
     },
     {
