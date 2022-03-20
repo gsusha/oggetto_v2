@@ -8,17 +8,17 @@ const getIcon = (name) => <Iconify icon={name} width={22} height={22} />;
 const sidebarConfig = [
   {
     title: 'Тесты',
-    path: '/dashboard/app',
+    path: '/admin/test',
     icon: getIcon('bi:list-check')
   },
   {
     title: 'Задания',
-    path: '/dashboard/tasks',
+    path: '/admin/tasks',
     icon: getIcon('gg:edit-black-point')
   },
   {
     title: 'Кандидаты',
-    path: '/dashboard/user',
+    path: '/admin/user',
     icon: getIcon('fluent:people-16-regular')
   }
 ];

@@ -1,4 +1,6 @@
 // routes
+import { HelmetProvider } from 'react-helmet-async';
+import { BrowserRouter } from 'react-router-dom';
 import Router from './routes';
 // theme
 import ThemeConfig from './theme';
@@ -11,11 +13,15 @@ import { BaseOptionChartStyle } from './components/charts/BaseOptionChart';
 
 export default function App() {
   return (
-    <ThemeConfig>
-      <ScrollToTop />
-      <GlobalStyles />
-      <BaseOptionChartStyle />
-      <Router />
-    </ThemeConfig>
+    <HelmetProvider>
+      <BrowserRouter>
+        <ThemeConfig>
+          <ScrollToTop />
+          <GlobalStyles />
+          <BaseOptionChartStyle />
+          <Router />
+        </ThemeConfig>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 }

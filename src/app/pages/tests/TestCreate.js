@@ -1,8 +1,8 @@
 import { TextField, ToggleButtonGroup, ToggleButton, Box } from '@mui/material';
 import { useState } from 'react';
-import { TestCode, TestVariants, TestImage } from '../sections/@dashboard/tests';
+import { TestCode, TestVariants, TestImage } from '../../sections/@dashboard/tests';
 
-export default function TaskDetail() {
+export default function TestCreate() {
   const [alignment, setAlignment] = useState('left');
 
   const handleAlignment = (event, newAlignment) => {
@@ -70,12 +70,6 @@ export default function TaskDetail() {
         maxRows={6}
         style={{ marginBottom: 20 }}
       />
-
-      <Box style={{ display: 'flex', flexWrap: 'wrap', gap: 20 }}>
-        <TestVariants />
-        <TestCode />
-        <TestImage />
-      </Box>
     </div>
   );
 }
