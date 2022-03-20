@@ -22,7 +22,7 @@ export default function Router() {
         { path: 'app', element: <Tests /> },
         { path: 'user', element: <User /> },
         { path: 'tasks', element: <Tasks /> },
-        { path: 'tests/new', element: <TestDetail /> },
+        { path: 'app/new', element: <TestDetail /> },
         { path: 'tasks/new', element: <TaskDetail /> }
       ]
     },

@@ -18,7 +18,7 @@ export default function Tasks() {
 
         <TaskList tasks={tasks} />
 
-        <AddBtn path="" />
+        <AddBtn />
       </Container>
     </Page>
   );

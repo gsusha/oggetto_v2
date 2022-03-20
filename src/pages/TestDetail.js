@@ -70,12 +70,6 @@ export default function TestDetail() {
         maxRows={6}
         style={{ marginBottom: 20 }}
       />
-
-      <Box style={{ display: 'flex', flexWrap: 'wrap', gap: 20 }}>
-        <TestVariants />
-        <TestCode />
-        <TestImage />
-      </Box>
     </div>
   );
 }

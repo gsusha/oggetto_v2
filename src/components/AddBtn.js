@@ -1,16 +1,14 @@
-import PropTypes from 'prop-types';
-import { useHistory } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
+import { Button } from '@mui/material';
 import Iconify from './Iconify';
 
-AddBtn.propTypes = {
-  path: PropTypes.string
-};
-
-export default function AddBtn({ path, ...other }) {
+export default function AddBtn() {
   const getIcon = (name) => <Iconify icon={name} width={28} height={28} />;
 
   return (
-    <div
+    <Button
+      to="new"
+      component={RouterLink}
       style={{
         position: 'fixed',
         bottom: '20px',
@@ -22,10 +20,13 @@ export default function AddBtn({ path, ...other }) {
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: '50%',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        padding: 0,
+        minWidth: 'unset',
+        color: '#000'
       }}
     >
       {getIcon('akar-icons:plus')}
-    </div>
+    </Button>
   );
 }
