@@ -12,7 +12,7 @@ export default function TaskCard({ task }) {
 
   return (
     <Card>
-      <Link to="#" color="inherit" component={RouterLink} underline="none">
+      <Link to="detail" color="inherit" component={RouterLink} underline="none">
         <Stack
           spacing={2}
           sx={{
@@ -37,7 +37,9 @@ export default function TaskCard({ task }) {
                 {time}
               </Typography>
             )}
-            <Typography variant="subtitle2">{description}</Typography>
+            <Typography variant="subtitle2" fontWeight={400}>
+              {description}
+            </Typography>
           </Box>
           <Box sx={{ justifySelf: 'end', display: 'flex' }}>
             <Typography

@@ -26,7 +26,7 @@ export default function TestSuccess() {
         <Typography
           variant="subtitle1"
           gutterBottom
-          onClick={() => copyLink('ola gaola')}
+          onClick={() => copyLink('тестовая линка, поменять')}
           color="primary.dark"
           style={{
             cursor: 'pointer'

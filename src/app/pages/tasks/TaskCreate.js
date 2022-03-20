@@ -5,10 +5,14 @@ import Page from '../../components/Page';
 import SuccessBtn from '../../components/SuccessBtn';
 
 export default function TaskCreate() {
-  const [alignment, setAlignment] = useState('left');
+  const [topic, setTopic] = useState('left');
+  const [level, setLevel] = useState('left');
 
-  const handleAlignment = (event, newAlignment) => {
-    setAlignment(newAlignment);
+  const handleTopic = (event, newTopic) => {
+    setTopic(newTopic);
+  };
+  const handleLevel = (event, newLevel) => {
+    setLevel(newLevel);
   };
 
   return (
@@ -25,10 +29,10 @@ export default function TaskCreate() {
 
           <ToggleButtonGroup
             color="primary"
-            value={alignment}
+            value={topic}
             fullWidth
             exclusive
-            onChange={handleAlignment}
+            onChange={handleTopic}
             style={{ marginBottom: 20 }}
           >
             <ToggleButton value="frontend" style={{ fontWeight: 'normal' }}>
@@ -44,10 +48,10 @@ export default function TaskCreate() {
 
           <ToggleButtonGroup
             color="primary"
-            value={alignment}
+            value={level}
             fullWidth
             exclusive
-            onChange={handleAlignment}
+            onChange={handleLevel}
             style={{ marginBottom: 20 }}
           >
             <ToggleButton value="intern" style={{ fontWeight: 'normal' }}>

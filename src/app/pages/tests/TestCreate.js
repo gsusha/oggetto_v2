@@ -5,14 +5,14 @@ import Page from '../../components/Page';
 import SuccessBtn from '../../components/SuccessBtn';
 
 export default function TestCreate() {
-  const [alignment, setAlignment] = useState('left');
-  const [alignment2, setAlignment2] = useState('left');
+  const [topic, setTopic] = useState('left');
+  const [level, setLevel] = useState('left');
 
-  const handleAlignment = (event, newAlignment) => {
-    setAlignment(newAlignment);
+  const handleTopic = (event, newTopic) => {
+    setTopic(newTopic);
   };
-  const handleAlignment2 = (event, newAlignment2) => {
-    setAlignment2(newAlignment2);
+  const handleLevel = (event, newLevel) => {
+    setLevel(newLevel);
   };
 
   return (
@@ -29,10 +29,10 @@ export default function TestCreate() {
 
           <ToggleButtonGroup
             color="primary"
-            value={alignment}
+            value={topic}
             fullWidth
             exclusive
-            onChange={handleAlignment}
+            onChange={handleTopic}
             style={{ marginBottom: 20 }}
           >
             <ToggleButton value="frontend" style={{ fontWeight: 'normal' }}>
@@ -48,10 +48,10 @@ export default function TestCreate() {
 
           <ToggleButtonGroup
             color="primary"
-            value={alignment2}
+            value={level}
             fullWidth
             exclusive
-            onChange={handleAlignment2}
+            onChange={handleLevel}
             style={{ marginBottom: 20 }}
           >
             <ToggleButton value="intern" style={{ fontWeight: 'normal' }}>

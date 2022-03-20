@@ -11,6 +11,7 @@ import NotFound from './pages/Page404';
 import TestCreate from './pages/tests/TestCreate';
 import TaskCreate from './pages/tasks/TaskCreate';
 import TestSuccess from './pages/tests/TestSucces';
+import TestDetail from './pages/tests/TestDetail';
 
 // ----------------------------------------------------------------------
 
@@ -26,7 +27,8 @@ export default function Router() {
         { path: 'test/new', element: <TestCreate /> },
         { path: 'tasks/new', element: <TaskCreate /> },
         { path: 'tasks/new', element: <TaskCreate /> },
-        { path: 'test/new/success', element: <TestSuccess /> }
+        { path: 'test/new/success', element: <TestSuccess /> },
+        { path: 'test/detail', element: <TestDetail /> }
       ]
     },
     {
